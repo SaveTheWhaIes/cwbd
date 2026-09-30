@@ -1,0 +1,8 @@
+contrasts: contrasts_paper.csv
+gtf: reference/genes_GRCm38_igenomes.gtf
+differential_max_pval: 0.05          # paper: nominal p < 0.05
+differential_max_qval: 1.0
+differential_min_fold_change: 1.41421  # paper: |log2FC| > 0.5, as linear fold change 2^0.5
+deseq2_shrink_lfc: false
+seed: 42
+exploratory_main_variable: Condition

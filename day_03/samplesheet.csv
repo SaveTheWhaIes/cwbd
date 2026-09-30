@@ -1,0 +1,17 @@
+sample,surgery,treatment,replicate,Condition,geo_title,run,contaminated
+Sham_oxy_1,Sham,oxy,1,Sham_oxy,C4,SRR23195506,yes
+Sham_oxy_2,Sham,oxy,2,Sham_oxy,C3,SRR23195511,no
+Sham_oxy_3,Sham,oxy,3,Sham_oxy,C2,SRR23195514,no
+Sham_oxy_4,Sham,oxy,4,Sham_oxy,C1,SRR23195519,no
+Sham_Sal_1,Sham,Sal,1,Sham_Sal,B4,SRR23195507,yes
+Sham_Sal_2,Sham,Sal,2,Sham_Sal,B3,SRR23195512,no
+Sham_Sal_3,Sham,Sal,3,Sham_Sal,B2,SRR23195515,no
+Sham_Sal_4,Sham,Sal,4,Sham_Sal,B1,SRR23195520,no
+SNI_oxy_1,SNI,oxy,1,SNI_oxy,H4,SRR23195508,no
+SNI_oxy_2,SNI,oxy,2,SNI_oxy,H3,SRR23195509,no
+SNI_oxy_3,SNI,oxy,3,SNI_oxy,H2,SRR23195516,no
+SNI_oxy_4,SNI,oxy,4,SNI_oxy,H1,SRR23195517,no
+SNI_Sal_1,SNI,Sal,1,SNI_Sal,F4,SRR23195505,no
+SNI_Sal_2,SNI,Sal,2,SNI_Sal,F3,SRR23195510,yes
+SNI_Sal_3,SNI,Sal,3,SNI_Sal,F2,SRR23195513,no
+SNI_Sal_4,SNI,Sal,4,SNI_Sal,F1,SRR23195518,no

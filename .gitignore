@@ -6,6 +6,7 @@ null/
 
 # Pipeline outputs
 results/
+reference/
 
 # Jupyter
 .ipynb_checkpoints/
