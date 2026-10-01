@@ -57,3 +57,8 @@ Notebook: [day_03/day_03.ipynb](day_03/day_03.ipynb)
 A first container (hello-world: run, find, remove), then FastQC 0.12.1 twice on read 1 of SRR23195511: installed by hand (zip plus a Java runtime kept in `tools/`) and from a Seqera container. Both reports match the day 2 nf-core/rnaseq FastQC line for line, apart from the file name. Two own images from Dockerfiles, cowsay and salmon 1.5.2 (curl from the GitHub release), on `debian:trixie-slim`, because the provided bullseye base no longer builds (end of life, security repository returns 404). The biocontainers salmon image gives the same version without building anything.
 
 Notebook: [day_04/docker.ipynb](day_04/docker.ipynb)
+
+## Day 5 (2026-10-02): Nextflow basics
+Five small Nextflow scripts, one per topic: channel factories (globs miss hidden files, `fromFilePairs`), operators (`collect` gives a value channel, `groupTuple` gathers every value of a key while `join` pairs one to one and drops the rest, `branch`, `collectFile`), processes up to one zip process run as three parallel tasks, meta maps from a samplesheet, and processes linked by channels, where `CONVERTTOUPPER` runs once per chunk (11 tasks). Under the strict parser of Nextflow 26.04 the template's `--step N` never matched, so each script declares `params { step: Integer = 0 }`.
+
+Notebook: [day_05/day_05.ipynb](day_05/day_05.ipynb)
