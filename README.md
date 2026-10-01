@@ -52,3 +52,8 @@ Notebooks: [day_02/day_02_part1.ipynb](day_02/day_02_part1.ipynb), [day_02/day_0
 nf-core/differentialabundance 2.0.0 on the provided count matrix, once with all 16 samples and once without C4, F3, B4, at the paper cutoff (p < 0.05, |log2FC| > 0.5). Without the contaminated samples the DEG counts land in the paper's range (SNI-Sal 2042, Sham-Oxy 1531, SNI-Oxy 1198 vs 1457, 2609, 1012) and the shared Venn core is 577 (paper 420), but the ranking of the contrasts differs and only a few hundred genes survive padj < 0.05. Most contrasts are mainly upregulated; oxycodone within SNI is mainly downregulated.
 
 Notebook: [day_03/day_03.ipynb](day_03/day_03.ipynb)
+
+## Day 4 (2026-10-01): Containers with Docker
+A first container (hello-world: run, find, remove), then FastQC 0.12.1 twice on read 1 of SRR23195511: installed by hand (zip plus a Java runtime kept in `tools/`) and from a Seqera container. Both reports match the day 2 nf-core/rnaseq FastQC line for line, apart from the file name. Two own images from Dockerfiles, cowsay and salmon 1.5.2 (curl from the GitHub release), on `debian:trixie-slim`, because the provided bullseye base no longer builds (end of life, security repository returns 404). The biocontainers salmon image gives the same version without building anything.
+
+Notebook: [day_04/docker.ipynb](day_04/docker.ipynb)

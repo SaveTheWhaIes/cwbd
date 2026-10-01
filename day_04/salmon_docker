@@ -1,4 +1,4 @@
-FROM debian:debian:trixie-slim
+FROM debian:trixie-slim
 
 LABEL image.author.name="Laurens Hahn"
 LABEL image.author.email="129853501+SaveTheWhaIes@users.noreply.github.com"

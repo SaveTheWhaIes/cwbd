@@ -1,5 +1,5 @@
 # this is the base image the container is built on. In this case, it is a slim version of the Debian operating system.
-# bookworm instead of the provided bullseye: bullseye is end of life and its security repository returns 404 for curl
+# trixie instead of the provided bullseye: bullseye is end of life and its security repository returns 404 for curl
 FROM debian:trixie-slim
 
 # these are the labels that are added to the image. They are metadata that can be used to identify the author of the image.
