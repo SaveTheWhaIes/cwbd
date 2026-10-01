@@ -1,12 +1,15 @@
 # this is the base image the container is built on. In this case, it is a slim version of the Debian operating system.
-FROM debian:bullseye-slim
+# bookworm instead of the provided bullseye: bullseye is end of life and its security repository returns 404 for curl
+FROM debian:trixie-slim
 
 # these are the labels that are added to the image. They are metadata that can be used to identify the author of the image.
-LABEL image.author.name "yourname"
-LABEL image.author.email "yourmail"
+LABEL image.author.name="Laurens Hahn"
+LABEL image.author.email="129853501+SaveTheWhaIes@users.noreply.github.com"
 
-# !TODO: add the command that is run to install the dependencies for the image. In this case, it should be updating the package list and installing curl and cowsay.
+# update the package list, install curl and cowsay, then drop the package lists to keep the image small
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends curl cowsay && \
+    rm -rf /var/lib/apt/lists/*
 
-
-
-# !TODO: add an ENV line to set environmental variables. In this case, it should set the PATH variable to /usr/games. Explain in the notebook why this is necessary.
+# Debian installs cowsay to /usr/games, which is not on the default PATH
+ENV PATH="/usr/games:${PATH}"

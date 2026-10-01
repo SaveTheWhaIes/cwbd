@@ -1,11 +1,15 @@
-FROM debian:bullseye-slim
+FROM debian:debian:trixie-slim
 
-LABEL image.author.name="yourname"
-LABEL image.author.email="yourmail"
+LABEL image.author.name="Laurens Hahn"
+LABEL image.author.email="129853501+SaveTheWhaIes@users.noreply.github.com"
 
-# Install dependencies
+# curl to download the release, ca-certificates so curl trusts GitHub's HTTPS certificate
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends curl ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
 
-# Download and install Salmon
+# download the prebuilt salmon 1.5.2 binary and unpack it to /opt
+RUN curl -fsSL https://github.com/COMBINE-lab/salmon/releases/download/v1.5.2/salmon-1.5.2_linux_x86_64.tar.gz | \
+    tar -xz -C /opt
 
-# Set the PATH environment variable (to /usr/bin)
-
+ENV PATH="/opt/salmon-1.5.2_linux_x86_64/bin:${PATH}"

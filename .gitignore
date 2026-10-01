@@ -10,3 +10,7 @@ reference/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Day 4: re-downloaded FASTQ and the manual FastQC + Java install
+day_04/data/
+day_04/tools/
