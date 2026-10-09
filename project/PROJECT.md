@@ -1,10 +1,10 @@
 # Fill out your Project Information
 
-Student1: \<name-1>
+Student1: Miriam Beermann
 
-Student2: \<name-2>
+Student2: Laurens Hahn
 
-Project Github url: \<github-url> 
+Project Github url: https://github.com/SaveTheWhaIes/cwbd-project
 
 
 # Next steps
