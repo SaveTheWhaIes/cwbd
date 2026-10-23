@@ -44,7 +44,7 @@ First contact with nf-core: what it is and why its guidelines matter, then nf-co
 Notebook: [day_01/day_01.ipynb](day_01/day_01.ipynb)
 
 ## Day 2 (2026-09-29): Study, raw data and read QC
-The study (Mitsi et al. 2023, oxycodone withdrawal with and without neuropathic pain, 2 x 2 design, 4 NAc samples per group). Part 1 tidies the run table, checks depth (Oxy runs about 10 % shallower) and downloads the two smallest runs with nf-core/fetchngs. Part 2 runs nf-core/rnaseq 3.27.0 (HISAT2 + Salmon) on them and reads the QC: SNI_Oxy is a low complexity library, Sham_Oxy carries many intronic reads. The tutors' run of all 16 samples reveals human rRNA in C4, F3 and B4 and mouse rRNA in F1 and C2, and confirms the two sample run's QC on the same libraries.
+The study (Pryce et al. 2023, oxycodone withdrawal with and without neuropathic pain, 2 x 2 design, 4 NAc samples per group). Part 1 tidies the run table, checks depth (Oxy runs about 10 % shallower) and downloads the two smallest runs with nf-core/fetchngs. Part 2 runs nf-core/rnaseq 3.27.0 (HISAT2 + Salmon) on them and reads the QC: SNI_Oxy is a low complexity library, Sham_Oxy carries many intronic reads. The tutors' run of all 16 samples reveals human rRNA in C4, F3 and B4 and mouse rRNA in F1 and C2, and confirms the two sample run's QC on the same libraries.
 
 Notebooks: [day_02/day_02_part1.ipynb](day_02/day_02_part1.ipynb), [day_02/day_02_part2.ipynb](day_02/day_02_part2.ipynb)
 
